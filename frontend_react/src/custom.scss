@@ -1,0 +1,51 @@
+.bg-corp-blue {
+  background-color: #163E6C;
+}
+
+.bg-corp-red {
+  background-color: #D20A11;
+}
+
+.bg-corp-white {
+  background-color: #EBE6D6;
+}
+
+@font-face {
+  src: local('MyFont'), url(../public/static/font/PT_Astra_Sans/PT-Astra-Sans_Regular.ttf);
+  font-family: 'PT_Astra-Sans_Regular';
+}
+
+@font-face {
+  src: local('MyFont'), url(../public/static/font/PT_Astra_Sans/PT-Astra-Sans_Italic.ttf);
+  font-family: 'PT_Astra-Sans_Italic';
+}
+
+@font-face {
+  src: local('MyFont'), url(../public/static/font/PT_Astra_Sans/PT-Astra-Sans_Bold-Italic.ttf);
+  font-family: 'PT_Astra-Sans_Bold-Italic';
+}
+
+@font-face {
+  src: local('MyFont'), url(../public/static/font/PT_Astra_Sans/PT-Astra-Sans_Bold.ttf);
+  font-family: 'PT_Astra-Sans_Bold';
+}
+
+body {
+  margin: 0;
+  font-family: 'PT_Astra-Sans_Regular', sans-serif !important;
+}
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+$theme-colors: (
+        primary: #163E6C,
+        secondary: #3b3c3e,
+        success: #1e6111,
+        info: #64c3d2,
+        warning: #f5e74a,
+        danger: #D20A11,
+        light: #EBE6D6
+);
+$figure-caption-color: #EBE6D6;
+@import "bootstrap/scss/bootstrap";
